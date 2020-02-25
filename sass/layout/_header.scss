@@ -1,0 +1,101 @@
+.header {
+
+
+    
+
+   background-image: linear-gradient(  rgba($color-primary-light, .8) , rgba($color-primary-dark, 1));
+
+ 
+  
+   
+
+   
+    
+
+    grid-row: 1;
+    grid-column: inicio / fim;
+    
+  
+  
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    &__logo {
+        z-index: 10;
+        height: auto;
+        max-width: 40rem;
+        animation: opac 3s;
+           
+        @include respond(phone) {
+            max-width: 35rem;
+            
+        }
+
+     
+           
+        @include respond(phone-small) {
+            max-width: 20rem;
+            
+        }
+        
+
+       
+
+        
+    }
+
+    &__nav-item {
+       
+        text-align: center;
+        &__link {
+            &:link,
+            &:visited {
+                //z-index: 100s;
+                display: block;
+                margin-right: 2rem;
+                font-size: 3rem;
+                font-weight: 300;                
+                padding: 1rem 2rem;               
+                color: $color-secondary-dark;
+                text-decoration: none;
+                animation: opac 4s;
+                transition: all .4s;
+            }
+
+
+            @include respond(phone-small) {
+               font-size: 2rem;
+               
+                
+            }
+            
+
+
+            &:hover,
+            &:active {
+                //z-index: 100s;
+                color:$color-white;
+                background-color: $color-secondary-dark;
+                border-radius: 3px;
+                transform: scale(1.1);
+        }
+        }
+
+
+        
+            
+        
+    }
+    
+}
+
+////////////////////////KEY FRAMES ////////////////////////////////
+@keyframes opac {
+
+    from{opacity: 0.2;}
+    to {opacity: 1;}
+}

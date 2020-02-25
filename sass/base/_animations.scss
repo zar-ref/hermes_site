@@ -1,0 +1,98 @@
+
+
+/////////////////////////ANIMAÇÕRS DE JQUERY--> TRANSLAÇÃO DE WIDTH  ////////////////////////////////
+
+@keyframes translacaoWidth {
+
+
+    0% {
+        min-width: 0;
+      
+    }
+    
+   
+
+
+    100% {
+
+        min-width:100%;
+    }
+
+  
+}
+
+
+
+////////////////////////CLASSES DE JQUERY  -->TRANSLAÇÃO DE WIDTH//////////////////
+
+
+.jq-width-visible {
+   
+
+    animation:none;
+
+}
+
+.jq-width-active {
+
+  
+
+    animation: translacaoWidth 2s forwards;
+}
+
+
+
+/////////////////////////ANIMAÇÕRS DE JQUERY--> SLIDE UP DOWN ////////////////////////////////
+
+
+@keyframes translacaoYCimaBaixo {
+
+    0% {
+        transform: translateY(4rem);
+        
+   }
+
+   50% {
+    transform: translateY(-2rem);
+   
+   }
+
+   75% {
+    transform: translateY(-1rem);
+   }
+   100% {
+        transform: translateY(-1rem);
+        
+   }
+}
+
+////////////////////////CLASSES DE JQUERY  --> SLIDE UP DOWN//////////////////
+
+.jq-slideUpDown-visible {
+    transform: translateY(0);
+
+    animation:none;
+}
+
+.jq-slideUpDown-active {
+
+  
+    visibility: visible;
+
+    animation: translacaoYCimaBaixo 2s forwards;
+}
+
+
+
+
+.light-small-slideUp {
+
+
+    &:hover{
+       
+        transform: translateY(-30px);
+         transition: all 1s;
+    }
+}
+
+

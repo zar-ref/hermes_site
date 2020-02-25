@@ -1,0 +1,67 @@
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ANIMAÇÃO QUE MFAZ SLIDE DO ELEMENTO DIREITA ESQUERDA E PREENCHE A WIDTH DEPOIS*/
+/*COMPLETO*/
+.heading-special {
+
+
+
+    @extend %heading;
+ 
+    
+
+    font-size: 6.5rem;
+
+
+
+    @include respond(phone-small) {
+        font-size: 5.5rem;
+      
+        
+    }
+
+    @include respond(phone-smallest) {
+      
+        font-size: 4.5rem;
+        
+    }
+
+
+
+    color: inherit;
+
+    background-color: transparent;
+    min-width: 0;
+    display: inline-block;
+    clear: both;
+    padding: 2rem 3rem 2rem 2rem;    
+
+    border-top: 0.3rem solid;
+    border-bottom:0.3rem solid;
+    border-color: inherit;
+    position: relative;
+
+
+
+}

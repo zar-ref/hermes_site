@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    // This defines what 1rem is
+    font-size: 62.5%;
+    /*eleiminar o espaço branco que aparecen a direita*/
+    width:100%;
+    overflow-x: hidden;
+
+
+    background-image:  url(../img/Banda-tab-land.JPG);
+   
+    -webkit-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+    background-attachment: fixed;
+    -webkit-background-position: center center;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size:cover;
+
+    @include respond(phone-smallest) {
+        background-image: none;
+    }
+
+
+/*
+
+    @include respond(phone-smallest) {
+      
+        background-image:  url(../img/Banda-phone-smallest.JPG);
+
+   
+        -webkit-background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        -webkit-background-attachment: fixed;
+        background-attachment: fixed;
+        -webkit-background-position: center center;
+        background-position: center center;
+        -webkit-background-size: cover;
+        background-size:cover;
+    }
+
+    @include respond(phone-super-small) {
+      
+        background-image:  url(../img/Banda-phone-super-small.JPG);
+        
+   
+        -webkit-background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        -webkit-background-attachment: fixed;
+        background-attachment: fixed;
+        -webkit-background-position: center center;
+        background-position: center center;
+        -webkit-background-size: cover;
+        background-size:cover;
+    }
+
+*/
+
+
+
+
+    
+}
+
+body {
+
+    /*eleiminar o espaço branco que aparecen a direita*/
+
+    overflow-x: hidden;
+    font-family: $font-primary;
+
+  
+
+    
+  
+
+}
+
+
+.container {
+    display: grid; //min content e depedente do que a celula tiver de contente    
+    grid-template-rows: 100vh  repeat( 4 , min-content ); //define-se apenas uma row, as outras ficam implicitas
+    grid-template-columns: [inicio]  1fr  [center-start] repeat(8 , [col-start] minmax(min-content , 14rem) [col-end] ) [center-end] 1fr [fim];
+    grid-row-gap: 0;
+
+    
+
+
+}
+
